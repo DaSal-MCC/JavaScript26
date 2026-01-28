@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment 01: JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script>
+      function innerfunction() {
+        document.getElementById("textChange").innerHTML =
+          "This text came from the head of this file!";
+      }
+    </script>
+
+    <script src="scripts/scripts.js"></script>
+  </head>
+  <body>
+    <img src="images/MyLogoNew.png" alt="MultiImg" id="testImgChange" />
+
+    <div>
+      <p>Click any of the buttons below to change the image above!</p>
+    </div>
+
+    <div>
+      <button
+        type="button"
+        onclick="
+          document.getElementById('testImgChange').src = 'images/MyLogoNew.png'
+        "
+      >
+        My Logo
+      </button>
+
+      <button
+        type="button"
+        onclick="
+          document.getElementById('testImgChange').src = 'images/pokeball.png'
+        "
+      >
+        Pokeball
+      </button>
+
+      <button
+        type="button"
+        onclick="
+          document.getElementById('testImgChange').src =
+            'images/illustrationRareLogo.png'
+        "
+      >
+        Gold Star
+      </button>
+    </div>
+
+    <div>
+      <button
+        type="button"
+        style="margin-top: 20px"
+        onclick="document.getElementById('testImgChange').style.width = '20%'"
+      >
+        Widen
+      </button>
+    </div>
+
+    <div>
+      <button
+        type="button"
+        style="margin-top: 20px"
+        onclick="
+          document.getElementById('testImgChange').style.display = 'block'
+        "
+      >
+        Show image
+      </button>
+
+      <button
+        type="button"
+        style="margin-top: 20px"
+        onclick="
+          document.getElementById('testImgChange').style.display = 'none'
+        "
+      >
+        Hide image
+      </button>
+    </div>
+
+    <div>
+      <h2 id="textChange"></h2>
+    </div>
+
+    <script>
+      document.getElementById("textChange").innerHTML =
+        "There's more where that came from! This text came from a script!";
+    </script>
+
+    <div>
+      <button type="button" onclick="innerfunction()">Inner</button>
+
+      <button type="button" onclick="myfunction()">External</button>
+    </div>
+
+    <div>
+      <button
+        type="button"
+        style="margin-top: 20px"
+        onclick="document.getElementById('textChange').style.color = 'green'"
+      >
+        Change text to green
+      </button>
+    </div>
+  </body>
+</html>
