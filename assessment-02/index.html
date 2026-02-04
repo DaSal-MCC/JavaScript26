@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment 1 Module 2: Shopping</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/menu.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to Munchie Corner!</h1>
+    <h3>We sell sandwiches, drinks, and deserts!</h3>
+    <label for="name" class="namespecial"
+      >Please enter your name for the reciept:</label
+    >
+    <input type="text" id="name" name="fname" /><br />
+
+    <p>Please make your selection below:</p>
+
+    <div class="menuitem">
+      <h2>Sandwiches</h2>
+      <br />
+      <label for="sand1">BLT (Price: $3)</label>
+      <input type="text" id="sand1" value="0" />
+
+      <label for="sand2">Panini (Price: $4)</label>
+      <input type="text" id="sand2" value="0" />
+
+      <label for="sand3">Hamburger (Price: $6)</label>
+      <input type="text" id="sand3" value="0" />
+
+      <label for="sand4">Grilled Cheese (Price: $5)</label>
+      <input type="text" id="sand4" value="0" />
+
+      <label for="sand5">Meatball Sub (Price: $5)</label>
+      <input type="text" id="sand5" value="0" />
+    </div>
+    <hr />
+    <div class="menuitem">
+      <h2>Drinks</h2>
+      <br />
+      <label for="drink1">Water (Price: $2)</label>
+      <input type="text" id="drink1" value="0" />
+
+      <label for="drink2">Cola (Price: $4)</label>
+      <input type="text" id="drink2" value="0" />
+
+      <label for="drink3">Milk (Price: $3)</label>
+      <input type="text" id="drink3" value="0" />
+
+      <label for="drink4">Apple Juice (Price: $3)</label>
+      <input type="text" id="drink4" value="0" />
+
+      <label for="drink5">Coffee (Price: $4)</label>
+      <input type="text" id="drink5" value="0" />
+    </div>
+    <hr />
+    <div class="menuitem">
+      <h2>Deserts</h2>
+      <br />
+      <label for="dess1">Cake (Price: $5)</label>
+      <input type="text" id="dess1" value="0" />
+
+      <label for="dess2">Brownie (Price: $4)</label>
+      <input type="text" id="dess2" value="0" />
+
+      <label for="dess3">Ice Cream (Price: $5)</label>
+      <input type="text" id="dess3" value="0" />
+
+      <label for="dess4">Apple Pie (Price: $6)</label>
+      <input type="text" id="dess4" value="0" />
+
+      <label for="dess5">Root Beer Float (Price: $7)</label>
+      <input type="text" id="dess5" value="0" />
+    </div>
+
+    <div>
+      <button type="button" class="purchasebutton" onclick="calculateTotal()">
+        Purchase
+      </button>
+    </div>
+
+    <div>
+      <p id="ordIntro"></p>
+      <p id="ord"></p>
+      <p id="total"></p>
+    </div>
+    <footer>
+      <p>David Salazar</p>
+    </footer>
+  </body>
+</html>

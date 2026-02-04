@@ -1,0 +1,40 @@
+body {
+  background-color: brown;
+  color: rgb(255, 255, 154);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.menuitem {
+  padding: 20px;
+  background-color: salmon;
+  color: black;
+}
+
+label {
+  font-size: large;
+  color: rgb(76, 76, 76);
+}
+
+.namespecial {
+  color: aliceblue;
+}
+
+input {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.purchasebutton {
+  background-color: coral;
+  color: darkred;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgb(202, 64, 0);
+  padding: 40px;
+}
