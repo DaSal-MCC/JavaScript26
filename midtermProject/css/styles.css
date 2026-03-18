@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+  padding: 20px;
+  background-color: orangered;
+  color: white;
+}
+
+.createGui {
+  padding: 20px;
+  background-color: orangered;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  background-color: brown;
+  border-color: aliceblue;
+  color: white;
+}
