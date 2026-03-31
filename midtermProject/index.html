@@ -3,45 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Custom Shop</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="scripts/script.js"></script>
   </head>
 
   <body>
     <div>
-      <h1>Welcome to your shop!</h1>
+      <h2>Welcome to..</h2>
+      <h1 id="shopName">Your shop!</h1>
+      <!-- Shop name can be changed-->
     </div>
     <div>
       <h3>Create your own items to sell. Have fun!</h3>
     </div>
-    <div>
+    <div class="createGui">
       <h2>Currently Selling:</h2>
     </div>
     <div>
       <p id="shop">Nothing at the moment</p>
+      <!-- Items can be added to the paragraph with the "shop" id-->
     </div>
     <div class="createGui">
       <h2>Add an item</h2>
     </div>
+    <form>
+      <div class="createGui">
+        <label for="name">Item name:</label>
+        <input type="text" id="name" />
+
+        <label for="itemType">Type (What is it?):</label>
+        <input type="text" id="itemType" />
+      </div>
+      <!-- Two input spots per row with the divs-->
+      <div class="createGui">
+        <label for="cost">$ Cost:</label>
+        <input type="number" id="cost" />
+        <label for="quanity">Quanity:</label>
+        <input type="number" id="quanity" />
+      </div>
+      <div class="createGui">
+        <label for="occasion">Occasion (Christmas, General, etc.):</label>
+        <input type="text" id="occasion" />
+      </div>
+      <div class="createGui">
+        <button type="button" id="submit">Submit</button>
+        <!--Values in boxes are passed into functions to be used in objects-->
+      </div>
+      <div class="createGui">
+        <button type="button" id="calculate">
+          Find total cost of items (one each)
+        </button>
+        <!-- Calculates the total from if you where to buy one of each item in the shop-->
+      </div>
+      <div>
+        <p id="totalCost"></p>
+      </div>
+    </form>
+
     <div class="createGui">
-      <label for="name">Item name:</label>
-      <input type="text" id="name" />
-      <label for="itemType">Type (What is it?):</label>
-      <input type="text" id="itemType" />
+      <h2>Rename Shop</h2>
     </div>
-    <div class="createGui">
-      <label for="cost">Cost:</label>
-      <input type="number" id="cost" />
-      <label for="quanity">Quanity:</label>
-      <input type="number" id="quanity" />
-    </div>
-    <div class="createGui">
-      <label for="occasion">Occasion:</label>
-      <input type="text" id="occasion" />
-    </div>
-    <div class="createGui">
-      <button type="button" id="submit">Submit</button>
-    </div>
+    <form>
+      <div class="createGui">
+        <label for="shopName"
+          >Type in a new name for your shop, which will appear at the top of the
+          screen:</label
+        >
+        <input type="text" id="shopNameVal" />
+      </div>
+      <div class="createGui">
+        <button type="button" id="rename">Submit</button>
+        <!-- Takes the above value and renames the shop to whatever you typed. There is always an exclamation point at the end.-->
+      </div>
+    </form>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
